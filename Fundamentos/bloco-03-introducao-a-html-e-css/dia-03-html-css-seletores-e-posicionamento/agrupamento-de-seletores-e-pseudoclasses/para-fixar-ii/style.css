@@ -1,0 +1,48 @@
+div:hover{
+    border: 5px solid blue;
+}
+
+div:nth-child(3) {
+    background-color: red;
+}
+
+div:nth-child(4) {
+    background-color: purple;
+}
+
+div:nth-child(5) {
+    background-color: pink;
+    font-size: 25px;
+}
+
+div:nth-child(6) {
+    background-color: midnightblue;
+}
+
+div:nth-child(7) {
+    background-color: cornsilk;
+}
+
+div:nth-child(3) h3 {
+    color: wheat;
+}
+
+div:nth-child(4) h3 {
+    color: skyblue;
+}
+
+div:nth-child(5) h3 {
+    color: dodgerblue;
+}
+
+div:nth-child(6) h3 {
+    color: white;
+}
+
+div:nth-child(7) h3 {
+    color: teal;
+}
+
+div:nth-child(odd) h3 {
+    font-style: italic;
+}
