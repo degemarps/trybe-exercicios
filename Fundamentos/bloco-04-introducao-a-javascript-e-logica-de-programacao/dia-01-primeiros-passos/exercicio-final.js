@@ -153,3 +153,88 @@ if ((valor4 % 2) == 1 || (valor5 % 2) == 1 || (valor6 % 2) == 1) {
 
 //décima atividade
 
+const custosProduto = 80;
+const vendaProduto = 140;
+
+if (custosProduto < 0 || vendaProduto < 0) {
+
+} else {
+  let custoTotal = 80 * 1.2;
+
+  let lucro = vendaProduto - custoTotal;
+
+  console.log(lucro * 1000)
+
+}
+
+//décima primeira atividade
+
+let salario = 3000;
+let alicota = 0;
+
+if (salario <= 1556.94) {
+  alicota = 0.08;
+
+  salario = salario - (salario * alicota);
+
+  console.log(salario);
+
+} else if (salario >= 1556.95 && salario <= 2594.92) {
+  alicota = 0.09;
+
+  salario = salario - (salario * alicota);
+
+  console.log(salario);
+
+} else if (salario >= 2594.93 && salario <= 5189.82) {
+  alicota = 0.11;
+
+  salario = salario - (salario * alicota);
+
+  console.log(salario);
+
+} else if (salario > 5189.82) {
+  alicota = 570.88;
+
+  salario = salario - 570.88;
+
+  console.log(salario);
+
+}
+
+if (salario <= 1903.98) {
+  impostoRenda = 0;
+
+  salario = salario - impostoRenda;
+
+  console.log(salario)
+
+} else if (salario >= 1903.99 && salario <= 2826.65) {
+  impostoRenda = 0.075;
+
+  salario = salario - ((salario * impostoRenda) - 142.80);
+
+  console.log(salario)
+
+} else if (salario >= 2826.66 && salario <= 3751.05) {
+  impostoRenda = 0.15;
+
+  salario = salario - ((salario * impostoRenda) - 354.80);
+
+  console.log(salario)
+
+} else if (salario >= 3751.06 && salario <= 4664.68) {
+  impostoRenda = 0.225;
+
+  salario = salario - ((salario * impostoRenda) - 636.13);
+
+  console.log(salario)
+
+} else if (salario > 4664.68) {
+  impostoRenda = 0.275;
+
+  salario = salario - ((salario * impostoRenda) - 869.36);
+
+  console.log(salario)
+
+}
