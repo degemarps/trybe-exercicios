@@ -131,3 +131,25 @@ const valor1 = 4;
 const valor2 = 3;
 const valor3 = 5;
 
+if ((valor1 % 2) == 0 || (valor2 % 2) == 0 || (valor3 % 2) == 0) {
+  console.log("true");
+
+} else {
+  console.log("false");
+}
+
+//nona atividade
+
+const valor4 = 4;
+const valor5 = 2;
+const valor6 = 6;
+
+if ((valor4 % 2) == 1 || (valor5 % 2) == 1 || (valor6 % 2) == 1) {
+  console.log("true");
+
+} else {
+  console.log("false")
+}
+
+//décima atividade
+
