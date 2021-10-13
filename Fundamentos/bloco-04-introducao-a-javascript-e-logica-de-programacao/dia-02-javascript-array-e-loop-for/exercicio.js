@@ -30,3 +30,18 @@ for (number of numbers) {
 }
 
 console.log("O maior valor do array é: " + maior);
+
+let quantImpar = 0;
+
+for (number of numbers) {
+  if (number % 2 == 1) {
+    quantImpar++;
+  }
+}
+
+if (quantImpar == 0) {
+  console.log("nenhum valor ímpar encontrado");
+
+} else {
+  console.log(quantImpar + " valores ímpares encontrados")
+}
