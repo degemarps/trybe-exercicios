@@ -19,3 +19,14 @@ if (media > 20) {
 } else {
   console.log("valor menor ou igual a 20");
 }
+
+let maior = numbers[0];
+
+for (number of numbers) {
+  if (number > maior) {
+    maior = number;
+
+  }
+}
+
+console.log("O maior valor do array é: " + maior);
