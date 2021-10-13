@@ -8,4 +8,14 @@ for (let number of numbers) {
 }
 
 console.log("Soma de todos os valores: " + soma);
-console.log("Média aritmética: " + (soma/numbers.length));
+
+let media = soma/numbers.length;
+
+console.log("Média aritmética: " + media);
+
+if (media > 20) {
+  console.log("valor maior que 20");
+
+} else {
+  console.log("valor menor ou igual a 20");
+}
