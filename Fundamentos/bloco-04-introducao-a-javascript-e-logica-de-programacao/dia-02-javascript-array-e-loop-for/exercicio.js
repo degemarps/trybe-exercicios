@@ -64,3 +64,7 @@ for (let num = 1; num < 26; num++) {
 }
 
 console.log(numeros);
+
+for (num of numeros) {
+  console.log(num/2);
+}
