@@ -7,4 +7,5 @@ for (let number of numbers) {
   soma = soma + number;
 }
 
-console.log("Soma de todos os valores: " + soma)
+console.log("Soma de todos os valores: " + soma);
+console.log("Média aritmética: " + (soma/numbers.length));
