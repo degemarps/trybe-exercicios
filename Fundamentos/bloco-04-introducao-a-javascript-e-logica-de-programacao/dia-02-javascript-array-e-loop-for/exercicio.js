@@ -43,7 +43,7 @@ if (quantImpar == 0) {
   console.log("nenhum valor ímpar encontrado");
 
 } else {
-  console.log(quantImpar + " valores ímpares encontrados")
+  console.log(quantImpar + " valores ímpares encontrados");
 }
 
 let menor = numbers[0];
@@ -56,3 +56,11 @@ for (number of numbers) {
 }
 
 console.log("O menor valor do array é: " + menor);
+
+let numeros = [];
+
+for (let num = 1; num < 26; num++) {
+  numeros[num-1] = num;
+}
+
+console.log(numeros);
