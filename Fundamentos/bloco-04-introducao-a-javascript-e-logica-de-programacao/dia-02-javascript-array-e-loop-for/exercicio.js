@@ -45,3 +45,14 @@ if (quantImpar == 0) {
 } else {
   console.log(quantImpar + " valores ímpares encontrados")
 }
+
+let menor = numbers[0];
+
+for (number of numbers) {
+  if (number < menor) {
+    menor = number;
+
+  }
+}
+
+console.log("O menor valor do array é: " + menor);
