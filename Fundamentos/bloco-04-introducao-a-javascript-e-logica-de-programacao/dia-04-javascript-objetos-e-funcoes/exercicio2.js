@@ -80,3 +80,34 @@ console.log(verifyMaxName(listNames));
 
 console.log("-------------------------");
 
+function verifyNumberTimes(numbers) {
+  let unique = [...new Set(numbers)];
+  let conts = [];
+
+  for (let i = 0; i < unique.length; i++) {
+    conts.push(0);
+    for (number of numbers){
+      if (unique[i] == number) {
+        conts[i] += 1;
+      }
+    }
+  }
+
+  let maiorCont = conts[0];
+  let maiorNumber = unique[0];
+
+  for (let i = 0; i < conts.length; i++) {
+
+    if (conts[i] > maiorCont) {
+
+      maiorCont = conts[i];
+      maiorNumber = unique[i];
+    }
+  }
+
+  return maiorNumber
+}
+
+let numbers = [2, 3, 2, 5, 8, 2, 3];
+
+console.log(verifyNumberTimes(numbers));
