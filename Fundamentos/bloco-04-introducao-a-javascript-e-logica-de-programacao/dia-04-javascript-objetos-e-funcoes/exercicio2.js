@@ -61,3 +61,22 @@ let listNumbers2 = [2, 4, 6, 7, 10, 0, -3];
 console.log(verifyIndexMin(listNumbers2));
 
 console.log("-------------------------");
+
+function verifyMaxName(names) {
+  let name = names[0];
+
+  for (let i = 0; i < names.length; i++) {
+    if (names[i].length > name.length) {
+      name = names[i];
+    }
+  }
+
+  return name;
+}
+
+let listNames = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+
+console.log(verifyMaxName(listNames));
+
+console.log("-------------------------");
+
