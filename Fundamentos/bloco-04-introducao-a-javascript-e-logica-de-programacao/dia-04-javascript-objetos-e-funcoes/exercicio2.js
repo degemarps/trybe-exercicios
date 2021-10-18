@@ -129,3 +129,26 @@ console.log(sum(5));
 
 console.log("-------------------------");
 
+function verifyWordEnd(word, wordEnd) {
+
+  let end = [];
+  let diferencLength = word.length - wordEnd.length;
+
+  for (let i = diferencLength; i < word.length; i++) {
+
+    end += word[i];
+  }
+
+  if (end == wordEnd) {
+
+    return true;
+  }else {
+
+    return false
+  }
+  
+}
+
+console.log(verifyWordEnd('trybe', 'be'));
+
+console.log(verifyWordEnd('joaofernando', 'fernan'));
