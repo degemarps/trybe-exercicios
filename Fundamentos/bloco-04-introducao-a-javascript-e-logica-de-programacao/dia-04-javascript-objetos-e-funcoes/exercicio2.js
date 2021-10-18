@@ -111,3 +111,21 @@ function verifyNumberTimes(numbers) {
 let numbers = [2, 3, 2, 5, 8, 2, 3];
 
 console.log(verifyNumberTimes(numbers));
+
+console.log("-------------------------");
+
+function sum(number) {
+  
+  let sum = 0;
+
+  for (let i = 1; i <= number; i++) {
+    sum += i;
+  }
+
+  return sum;
+}
+
+console.log(sum(5));
+
+console.log("-------------------------");
+
