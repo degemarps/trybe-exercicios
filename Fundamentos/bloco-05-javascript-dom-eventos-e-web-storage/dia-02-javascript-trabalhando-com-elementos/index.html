@@ -59,22 +59,27 @@
 
 <body>
   <script>
-      let tagBody = document.querySelector('body');
-      let bodyH1 = document.createElement('h1');
-      bodyH1.innerText = 'Exercício 5.2 - JavaScript DOM';
-      tagBody.appendChild(bodyH1);
 
-      let bodyMain = document.createElement('main');
-      bodyMain.className = 'main-content';
-      tagBody.appendChild(bodyMain);
+    let tagBody = document.querySelector('body');
+    let bodyH1 = document.createElement('h1');
+    bodyH1.innerText = 'Exercício 5.2 - JavaScript DOM';
+    tagBody.appendChild(bodyH1);
 
-      let mainSection1 = document.createElement('section');
-      mainSection1.className = 'center-content';
-      bodyMain.appendChild(mainSection1);
+    let bodyMain = document.createElement('main');
+    bodyMain.className = 'main-content';
+    tagBody.appendChild(bodyMain);
 
-      let section1P = document.createElement('p');
-      section1P.innerText = 'Parágrafo de teste';
-      mainSection1.appendChild(section1P);
+    let mainSection1 = document.createElement('section');
+    mainSection1.className = 'center-content';
+    bodyMain.appendChild(mainSection1);
+
+    let section1P = document.createElement('p');
+    section1P.innerText = 'Parágrafo de teste';
+    mainSection1.appendChild(section1P);
+
+    let mainSection2 = document.createElement('section');
+    mainSection2.className = 'left-content';
+    bodyMain.appendChild(mainSection2);
   </script>
 </body>
 
