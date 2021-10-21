@@ -60,36 +60,44 @@
 <body>
   <script>
 
+    //Requisito 1
     let tagBody = document.querySelector('body');
     let bodyH1 = document.createElement('h1');
     bodyH1.innerText = 'Exercício 5.2 - JavaScript DOM';
     tagBody.appendChild(bodyH1);
 
+    //Requisito 2
     let bodyMain = document.createElement('main');
     bodyMain.className = 'main-content';
     tagBody.appendChild(bodyMain);
 
+    //Requisito 3
     let mainSection1 = document.createElement('section');
     mainSection1.className = 'center-content';
     bodyMain.appendChild(mainSection1);
 
+    //Requisito 4
     let section1P = document.createElement('p');
     section1P.innerText = 'Parágrafo de teste';
     mainSection1.appendChild(section1P);
 
+    //Requisito 5
     let mainSection2 = document.createElement('section');
     mainSection2.className = 'left-content';
     bodyMain.appendChild(mainSection2);
 
+    //Requisito 6
     let mainSection3 = document.createElement('section');
     mainSection3.className = 'right-content';
     bodyMain.appendChild(mainSection3);
 
+    //Requisito 7
     let image = document.createElement('img');
     image.src = 'https://picsum.photos/200';
     image.className = 'small-image';
     mainSection2.appendChild(image);
 
+    //Requisito 8
     let listContent = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
     let listUl = document.createElement('ul');
     mainSection3.appendChild(listUl);
@@ -104,14 +112,41 @@
       listUl.appendChild(listLi);
     }
 
+    //Requisito 9 e requisito 2 da parte 2
     for (let i = 0; i < 3; i += 1) {
       let mainH3 = document.createElement('h3');
 
       mainH3.innerText = 'Texto H3 para teste';
+      mainH3.className = 'description';
 
       bodyMain.appendChild(mainH3);
     }
 
+    //Parte 2 requisito 1
+    bodyH1.className = 'title';
+
+    //Parte 2 requisito 3
+    bodyMain.removeChild(mainSection2);
+
+    //Parte 2 requisito 4
+    mainSection3.style.marginRight = 'auto';
+
+    //Parte 2 requisito 5
+    mainSection1.parentElement.style.backgroundColor = 'green';
+
+    //Parte 2 requisito 6
+    let listItems = document.getElementsByTagName('li');
+
+    console.log(listItems);
+
+    for (let i = listItems.length; i > 0; i -= 1) {
+      let element = listItems[i];
+
+      if (i == 8 || i == 9){
+        listUl.removeChild(element);
+      }
+    }
+    
   </script>
 </body>
 
