@@ -140,3 +140,15 @@ function addTask (taskName) {
 }
 
 addTask('cozinhar');
+
+//Exercício 8
+function colorTask (color) {
+  const parent = document.querySelector('.my-tasks');
+  const task = document.createElement('div');
+
+  task.style.backgroundColor = color;
+  task.className = 'task';
+  parent.appendChild(task);
+}
+
+colorTask('blue');
