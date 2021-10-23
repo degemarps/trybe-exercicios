@@ -46,7 +46,7 @@ function createDays() {
 createDays();
 
 // Exercício 2
-function holidays (string) {
+function holidays(string) {
   const btnContainer = document.querySelector('.buttons-container');
   const btnHolidays = document.createElement('button');
 
@@ -61,11 +61,11 @@ function holidays (string) {
 holidays('Feriados');
 
 //Exercício 3
-function eventHoliday (button) {
+function eventHoliday(button) {
 
-  button.addEventListener('click', function(){
+  button.addEventListener('click', function () {
     const daysHoliday = document.querySelectorAll('.holiday');
-    
+
     for (let i = 0; i < daysHoliday.length; i += 1) {
       if (daysHoliday[i].style.backgroundColor == 'yellow') {
         daysHoliday[i].style.backgroundColor = 'rgb(238,238,238)';
@@ -77,7 +77,7 @@ function eventHoliday (button) {
 }
 
 //Exercício 4
-function fridays (string) {
+function fridays(string) {
   const btnContainer = document.querySelector('.buttons-container');
   const btnFridays = document.createElement('button');
 
@@ -93,13 +93,13 @@ function fridays (string) {
 fridays('Sexta-feira');
 
 //Exercício 5
-function eventFriday (button) {
+function eventFriday(button) {
 
   const fridayDays = [4, 11, 18, 25];
 
-  button.addEventListener('click', function(){
+  button.addEventListener('click', function () {
     const daysFridays = document.querySelectorAll('.friday');
-    
+
     for (let i = 0; i < daysFridays.length; i += 1) {
       if (daysFridays[i].innerText == 'Sextou') {
         daysFridays[i].innerText = fridayDays[i];
@@ -109,3 +109,23 @@ function eventFriday (button) {
     }
   });
 }
+
+//Exercício 6
+function fontMaxDays() {
+  const days = document.querySelector('#days');
+
+  days.addEventListener('mouseover', function(event){
+    event.target.style.fontSize = '23px';
+  });
+}
+
+function fontNormalDays() {
+  const days = document.querySelector('#days');
+
+  days.addEventListener('mouseout', function(event){
+    event.target.style.fontSize = '20px';
+  });
+}
+
+fontMaxDays();
+fontNormalDays();
