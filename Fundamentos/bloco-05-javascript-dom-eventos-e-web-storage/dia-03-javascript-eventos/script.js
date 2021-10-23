@@ -46,7 +46,6 @@ function createDays() {
 createDays();
 
 // Exercício 2
-
 function holidays (string) {
   const btnContainer = document.querySelector('.buttons-container');
   const btnHolidays = document.createElement('button');
@@ -62,7 +61,6 @@ function holidays (string) {
 holidays('Feriados');
 
 //Exercício 3
-
 function addEvent (button) {
 
   button.addEventListener('click', function(){
@@ -78,3 +76,16 @@ function addEvent (button) {
   });
 }
 
+//Exercício 4
+function fridays (string) {
+  const btnContainer = document.querySelector('.buttons-container');
+  const btnFridays = document.createElement('button');
+
+  btnFridays.id = 'btn-friday';
+  btnFridays.innerText = string;
+
+  btnContainer.appendChild(btnFridays);
+
+}
+
+fridays('Sexta-feira');
