@@ -129,3 +129,14 @@ function fontNormalDays() {
 
 fontMaxDays();
 fontNormalDays();
+
+//Exercício 7
+function addTask (taskName) {
+  const parent = document.querySelector('.my-tasks');
+  const task = document.createElement('span');
+
+  task.innerText = taskName;
+  parent.appendChild(task);
+}
+
+addTask('cozinhar');
