@@ -55,6 +55,26 @@ function holidays (string) {
   btnHolidays.innerText = string;
 
   btnContainer.appendChild(btnHolidays);
+
+  addEvent(btnHolidays);
 }
 
 holidays('Feriados');
+
+//Exercício 3
+
+function addEvent (button) {
+
+  button.addEventListener('click', function(){
+    const daysHoliday = document.querySelectorAll('.holiday');
+    
+    for (let i = 0; i < daysHoliday.length; i += 1) {
+      if (daysHoliday[i].style.backgroundColor == 'yellow') {
+        daysHoliday[i].style.backgroundColor = 'rgb(238,238,238)';
+      } else {
+        daysHoliday[i].style.backgroundColor = 'yellow';
+      }
+    }
+  });
+}
+
