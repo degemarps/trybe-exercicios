@@ -167,3 +167,24 @@ function taskSelected () {
 }
 
 taskSelected();
+
+
+//Exercício 10 
+function daySelected () {
+  let day = document.querySelector('#days');
+  let task = document.querySelector('.task');
+  let taskSelected = document.getElementsByClassName('task selected');
+  let taskColor = task.style.backgroundColor;
+
+  day.addEventListener('click', function(event){
+    let eventColor = event.target.style.color;
+    if (taskSelected.length > 0 && eventColor != taskColor) {
+      let color = taskSelected[0].style.backgroundColor;
+      event.target.style.color = color;
+    } else if (taskSelected.length != 0 && eventColor == taskColor) {
+      event.target.style.color = 'rgb(119,119,119)';
+    }
+  });
+}
+
+daySelected();
