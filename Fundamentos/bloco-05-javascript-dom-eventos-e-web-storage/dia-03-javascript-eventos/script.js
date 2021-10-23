@@ -55,13 +55,13 @@ function holidays (string) {
 
   btnContainer.appendChild(btnHolidays);
 
-  addEvent(btnHolidays);
+  eventHoliday(btnHolidays);
 }
 
 holidays('Feriados');
 
 //Exercício 3
-function addEvent (button) {
+function eventHoliday (button) {
 
   button.addEventListener('click', function(){
     const daysHoliday = document.querySelectorAll('.holiday');
@@ -86,6 +86,26 @@ function fridays (string) {
 
   btnContainer.appendChild(btnFridays);
 
+  eventFriday(btnFridays);
+
 }
 
 fridays('Sexta-feira');
+
+//Exercício 5
+function eventFriday (button) {
+
+  const fridayDays = [4, 11, 18, 25];
+
+  button.addEventListener('click', function(){
+    const daysFridays = document.querySelectorAll('.friday');
+    
+    for (let i = 0; i < daysFridays.length; i += 1) {
+      if (daysFridays[i].innerText == 'Sextou') {
+        daysFridays[i].innerText = fridayDays[i];
+      } else {
+        daysFridays[i].innerText = 'Sextou';
+      }
+    }
+  });
+}
