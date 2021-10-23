@@ -152,3 +152,18 @@ function colorTask (color) {
 }
 
 colorTask('blue');
+
+//Exercício 9
+function taskSelected () {
+  const task = document.querySelector('.task');
+
+  task.addEventListener('click', function(event){
+    if (event.target.className == 'task selected') {
+      event.target.className = 'task'
+    } else {
+      event.target.className = 'task selected'
+    }
+  });
+}
+
+taskSelected();
