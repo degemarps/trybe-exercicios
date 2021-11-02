@@ -35,14 +35,40 @@
         <input type="text" class="form-control" maxlength="28" required />
 
         <label for="" class="form-label">Estado</label>
-        <select name="" id="" class="form-control" required></select>
+        <select name="" id="estados" class="form-control" required></select>
 
-        <label for="" name="tipo-residencia" class="form-label">Tipo</label>
-        <input type="radio" name="tipo-residencia" />Casa
-        <input type="radio" name="tipo-residencia" required />Apartamento
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="tipo-residencia1"
+          />
+          <label
+            for="tipo-residencia1"
+            name="tipo-residencia1"
+            class="form-check-label"
+            >Casa</label
+          >
+        </div>
+
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="tipo-residencia1"
+            required
+          />
+          <label
+            for="tipo-residencia1"
+            name="tipo-residencia1"
+            class="form-check-label"
+            >Apartamento</label
+          >
+        </div>
 
         <label for="" class="form-label">Resumo do Currículo</label>
         <textarea
+          class="form-control"
           name=""
           id=""
           cols="30"
@@ -58,12 +84,21 @@
         <input type="text" class="form-control" maxlength="40" required />
 
         <label for="date" class="form-label">Data de Início</label>
-        <input id="date-camp"type="date" class="form-control" name="date" required />
+        <input
+          id="date-camp"
+          type="date"
+          class="form-control"
+          name="date"
+          required
+        />
       </section>
 
       <div class="container mb-3">
-        <button type="reset">Limpar</button>
+        <button id="btnSubmit" type="submit">Submeter</button>
+        <button class="ms-3" type="reset">Limpar</button>
       </div>
     </form>
+
+    <script src="./script.js"></script>
   </body>
 </html>
