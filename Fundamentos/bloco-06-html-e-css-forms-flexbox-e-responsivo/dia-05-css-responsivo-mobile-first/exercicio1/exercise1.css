@@ -1,0 +1,56 @@
+body {
+  font-size: 20px;
+  margin: 10px;
+}
+h1 {
+  font-size: 25px
+}
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+figure {
+    margin: 0;
+}
+
+@media screen and (min-width: 800px ) {
+  body {
+    background-color: peachpuff;
+    font-size: 25px;
+    margin: 20px;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  figure {
+    width: 40%;
+  }
+
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  body {
+    background-color: palegoldenrod;
+    font-size: 30px;
+    margin: 30px;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+}
