@@ -31,7 +31,7 @@ nav ul {
 }
 
 .main-content {
-  margin-top: 150px;
+  margin-top: 250px;
   text-align: justify;
   font-size: 20px;
 }
@@ -75,4 +75,52 @@ nav ul {
 footer {
   margin-top: 100px;
   text-align: justify;
+  font-size: 12px;
+}
+
+footer h3 {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 700px) {
+  .container {
+    margin: 40px;
+    font-size: 20px;
+  }
+
+  header p {
+    font-size: 24px;
+  }
+
+  nav ul {
+    width: 400px;
+    justify-content: space-between;
+    font-size: 20px;
+  }
+
+  .aside-one {
+    margin-top: 90px;
+  }
+
+  .aside-two {
+    margin-top: 150px;
+  }
+
+  .main-content {
+    margin-top: 250px;
+    font-size: 22px;
+  }
+
+  .main-content h1 {
+    font-size: 26px;
+  }
+
+  footer {
+    margin-top: 150px;
+    font-size: 16px;
+  }
+
+  footer h3 {
+    font-size: 20px;
+  }
 }
