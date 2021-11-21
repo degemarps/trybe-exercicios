@@ -165,3 +165,13 @@ function everyoneWasBornOnSecXX(objList) {
 }
 
 console.log(everyoneWasBornOnSecXX(books));
+
+// Faça uma função que retorne true , se algum livro foi lançado na década de 80, e false , caso contrário.
+// const expectedResult = true;
+
+function someBookWasReleaseOnThe80s(objList) {
+  return objList.some((obj) => obj.releaseYear >= 1980 && obj.releaseYear <= 1989);
+}
+
+console.log(someBookWasReleaseOnThe80s(books));
+
