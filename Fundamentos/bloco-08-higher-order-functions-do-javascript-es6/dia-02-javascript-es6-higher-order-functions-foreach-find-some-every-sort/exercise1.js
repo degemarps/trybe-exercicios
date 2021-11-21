@@ -70,10 +70,19 @@ function authorBornIn1947(objList) {
 console.log(authorBornIn1947(books));
 
 // Retorne o nome do livro de menor nome.
-function smallerName() {
-  let nameBook;
-  // escreva aqui o seu código
+function smallerName(objList) {
+  let nameBook = objList[0].name;
+  let nameLength = objList[0].name.length;
+  
+  objList.forEach((obj) => {
+    if (obj.name.length < nameLength) {
+      nameBook = obj.name;
+      nameLength = obj.name.length;
+    }
+  });
 
   // Variável nameBook que receberá o valor do menor nome;
   return nameBook;
 }
+
+console.log(smallerName(books));
