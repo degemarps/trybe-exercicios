@@ -86,3 +86,21 @@ function smallerName(objList) {
 }
 
 console.log(smallerName(books));
+
+// Encontre o primeiro livro cujo nome possui 26 caracteres.
+const expectedResult = {
+  author: {
+    birthYear: 1948,
+    name: 'George R. R. Martin',
+  },
+  genre: 'Fantasia',
+  id: 1,
+  name: 'As Crônicas de Gelo e Fogo',
+  releaseYear: 1991,
+};
+
+function getNamedBook(objList) {
+  return objList.find((obj) => obj.name.length === 26);
+}
+
+console.log(getNamedBook(books));
