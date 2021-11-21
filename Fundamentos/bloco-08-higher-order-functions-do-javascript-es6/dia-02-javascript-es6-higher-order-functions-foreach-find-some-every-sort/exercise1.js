@@ -175,3 +175,17 @@ function someBookWasReleaseOnThe80s(objList) {
 
 console.log(someBookWasReleaseOnThe80s(books));
 
+// Faça uma função que retorne true , caso nenhum author tenha nascido no mesmo ano, e false , caso contrário.
+// const expectedResult = false;
+
+function authorUnique(objList) {
+  let years = [];
+  let notContain = true;
+  objList.forEach((obj) => {
+    if (years.includes(obj.author.birthYear)) { notContain = false } else { years.push(obj.author.birthYear) }
+  });
+
+  return notContain;
+}
+
+console.log(authorUnique(books));
