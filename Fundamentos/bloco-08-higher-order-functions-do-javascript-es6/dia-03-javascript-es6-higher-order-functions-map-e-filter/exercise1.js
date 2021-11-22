@@ -204,3 +204,17 @@ function fantasyOrScienceFictionAuthors() {
 }
 
 console.log(fantasyOrScienceFictionAuthors());
+
+// Crie um array com o nome de todos os livros com mais de 60 anos de publicação.
+// const expectedResult = [
+//   'O Senhor dos Anéis',
+//   'Fundação',
+//   'O Chamado de Cthulhu',
+// ];
+
+function oldBooks() {
+  const olderBooks = books.filter((book) => 2021 - book.releaseYear > 60);
+  return olderBooks.map((book) => `${book.name}`);
+}
+
+console.log(oldBooks());
