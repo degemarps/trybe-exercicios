@@ -115,8 +115,20 @@ console.log(averageAge());
 // };
 
 function longestNamedBook() {
-  const longestName = books.reduce((acc, book) => {if (acc.name.length > book.name.length) {return acc;} return book;});
-  return longestName;
+  return books.reduce((acc, book) => acc.name.length > book.name.length ? acc : book);
 }
 
 console.log(longestNamedBook());
+
+// Dada o array de nomes, retorne a quantidade de vezes em que aparecem a letra a maiúscula ou minúscula.
+const names = [
+  'Aanemarie', 'Adervandes', 'Akifusa',
+  'Abegildo', 'Adicellia', 'Aladonata',
+  'Abeladerco', 'Adieidy', 'Alarucha',
+];
+
+function containsA() {
+  return names.reduce((acc, word) => (acc += word.split('').reduce((acc, letter) => acc += letter === 'a' || letter === 'A' ? 1 : 0, 0)), 0);
+}
+
+console.log(containsA());
