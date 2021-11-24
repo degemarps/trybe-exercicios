@@ -84,8 +84,8 @@ function reduceNames() {
   // const stringEdit = string.replace(/..$/,'.');
   // return stringEdit;
   const names = books.reduce((acc, book, index, array) => {
-    if (index === array.length - 1) return acc.concat(book.author.name,'.');
-    return acc.concat(book.author.name,', ');
+    if (index === array.length - 1) return acc.concat(book.author.name, '.');
+    return acc.concat(book.author.name, ', ');
   }, '');
   return names;
 }
@@ -96,7 +96,7 @@ console.log(reduceNames());
 // const expectedResult = 43;
 
 function averageAge() {
-  const age = books.reduce((acc, book) => {return acc += book.releaseYear - book.author.birthYear} ,0);
+  const age = books.reduce((acc, book) => { return acc += book.releaseYear - book.author.birthYear }, 0);
   return age / books.length;
 }
 
@@ -132,3 +132,24 @@ function containsA() {
 }
 
 console.log(containsA());
+
+// Agora vamos criar um novo array de objetos a partir das informações abaixo, onde cada objeto terá o formato { name: nome do aluno, 
+// average: media das notas } . Para isso vamos assumir que a posição 0 de notas refere-se ao aluno na posição 0 de alunos , aqui além de 
+// reduce será necessário utilizar também a função map . Dica: Você pode acessar o index do array dentro de map , e você pode ver o objeto esperado na constante expected .
+
+// const expected = [
+//   { name: 'Pedro Henrique', average: 7.8 },
+//   { name: 'Miguel', average: 9.2 },
+//   { name: 'Maria Clara', average: 8.8 },
+// ];
+
+const students = ['Pedro Henrique', 'Miguel', 'Maria Clara'];
+const grades = [[9, 8, 10, 7, 5], [10, 9, 9, 10, 8], [10, 7, 10, 8, 9]];
+
+function studentAverage() {
+  const gradesAverage = [];
+  students.map((student, index) => gradesAverage.push({ name: student, averageAge: (grades[index].reduce((acc, grade) => acc += grade)) / grades[index].length,}));
+  return gradesAverage;
+}
+
+console.log(studentAverage());
