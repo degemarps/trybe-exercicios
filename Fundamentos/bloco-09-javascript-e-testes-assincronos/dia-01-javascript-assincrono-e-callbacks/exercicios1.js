@@ -1,3 +1,5 @@
+const { test } = require("picomatch");
+
 // Dado o código abaixo, qual a ordem de finalização de execução das linhas comentadas?
 const planetDistanceFromSun = ({ name, distanceFromSun: { value, measurementUnit } }) =>
   `${name} is ${value} ${measurementUnit} apart from the Sun`;
@@ -129,5 +131,15 @@ sendMarsTemperature(temperatureInFahrenheit, handleError);
 // imprime "Hi there! Curiosity here. Right now is 53ºC at Mars", por exemplo, ou "Error getting temperature: Robot is busy"
 sendMarsTemperature(greet, handleError);
 
-//  Escreva um teste que verifique a chamada do callback de uma função uppercase , que transforma as letras de uma palavra em letras maiúsculas. 
+// Escreva um teste que verifique a chamada do callback de uma função uppercase , que transforma as letras de uma palavra em letras maiúsculas. 
 // Lembre-se de ter cuidado com os falso-positivos em testes assíncronos.
+
+const uppercase = (str, callback) => {
+  setTimeout(() => {
+    callback(str.toUpperCase());
+  }, 500);
+};
+
+test('Testa se a string passada sai com suas letras todas mmaiúsculas', () => {
+  
+});
