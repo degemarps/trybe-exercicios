@@ -1,5 +1,5 @@
 import React from "react";
-import Prototype from 'prop-types';
+import PropTypes from 'prop-types';
 
 class Pokemon extends React.Component {
   render() {
@@ -7,19 +7,19 @@ class Pokemon extends React.Component {
       <div>
         <p>{this.props.name}</p>
         <p>{this.props.type}</p>
-        <p>{this.props.averageWeight.value}{this.props.averageWeight.measurementUnit}</p>
-        <img src={this.props.image}></img>
+        <p>{this.props.value}{this.props.measurementUnit}</p>
+        <img src={this.props.image} alt='Imagem pokemon'></img>
       </div>
     );
   }
 }
 
-Pokemon.prototype = {
-  name: Prototype.string,
-  type: Prototype.string,
-  value: Prototype.number,
-  measurementUnit: Prototype.string,
-  image: Prototype.string,
+Pokemon.Prototypes = {
+  name: PropTypes.string,
+  type: PropTypes.string,
+  value: PropTypes.number,
+  measurementUnit: PropTypes.string,
+  image: PropTypes.string,
 };
 
 export default Pokemon;
