@@ -1,4 +1,5 @@
 import React from 'react';
+import { Card, ListGroup } from 'react-bootstrap';
 
 const conteudos = [
   {
@@ -24,11 +25,17 @@ const conteudos = [
 ];
 
 const listContents = conteudos.map((item) =>
-  <li>
-    Conteúdo é: {item.conteudo}<br></br>
-    Status: {item.status}<br></br>
-    Bloco: {item.bloco}<br></br>
-  </li>
+
+  <Card>
+    <ListGroup>
+      <ListGroup.Item variant="flush">
+        Conteúdo é: {item.conteudo}<br></br>
+        Status: {item.status}<br></br>
+        Bloco: {item.bloco}<br></br>
+        <br></br>
+      </ListGroup.Item>
+    </ListGroup>
+  </Card>
 );
 
 class Content extends React.Component {
