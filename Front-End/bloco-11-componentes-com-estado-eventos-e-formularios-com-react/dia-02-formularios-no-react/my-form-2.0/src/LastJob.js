@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 import './LastJob.css'
 
 class LastJob extends React.Component {
@@ -20,8 +20,8 @@ class LastJob extends React.Component {
           <input type="text" maxLength="500" name="descricao-cargo" required />
         </label>
       </fieldset>
-    );
+    )
   }
 }
 
-export default LastJob;
+export default LastJob
