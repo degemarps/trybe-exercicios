@@ -1,34 +1,35 @@
-import React from 'react'
-import './PersonalData.css'
-import estados from './Estados'
+import React from 'react';
+import './PersonalData.css';
+import estados from './Estados';
 
 class PersonalData extends React.Component {
   render() {
+    const { personalName, personalEmail, personalCpf, personalStreet, personalCity, onChangeHandler } = this.props;
     return (
       <fieldset className="container">
         <label>
           Nome
-          <input type="text" name="nome" maxLength="40" style={{ textTransform: 'uppercase' }} required />
+          <input type="text" name="personalName" value={ personalName } maxLength="40" style={{ textTransform: 'uppercase' }} onChange={ onChangeHandler } required />
         </label>
         <label>
           Email
-          <input type="email" name="email" maxLength="50" required />
+          <input type="email" name="personalEmail" value={ personalEmail } maxLength="50" onChange={ onChangeHandler } required />
         </label>
         <label>
           CPF
-          <input type="text" name="cpf" maxLength="11" required />
+          <input type="text" name="personalCpf" value={ personalCpf } maxLength="11" onChange={ onChangeHandler } required />
         </label>
         <label>
           Endereço
-          <input type="text" name="endereco" maxLength="200" required />
+          <input type="text" name="personalStreet" value={ personalStreet } maxLength="200" onChange={ onChangeHandler } required />
         </label>
         <label>
           Cidade
-          <input type="text" name="cidade" maxLength="28" required />
+          <input type="text" name="personalCity" value={ personalCity } maxLength="28" onChange={ onChangeHandler } required />
         </label>
         <label>
           Estado
-          <select name="estado">
+          <select name="personalState" onChange={ onChangeHandler }>
             {estados.map((estado, index) => (
               <option key={index} value={estado}>
                 {estado}
@@ -38,11 +39,11 @@ class PersonalData extends React.Component {
         </label>
         Tipo
         <label>
-          <input type="radio" name="residencia" value="casa" required />
+          <input type="radio" name="personalResidence" value="casa" onChange={ onChangeHandler } required />
           casa
         </label>
         <label>
-          <input type="radio" name="residencia" value="apartamento" />
+          <input type="radio" name="personalResidence" value="apartamento" onChange={ onChangeHandler } />
           Apartamento
         </label>
       </fieldset>
