@@ -78,3 +78,7 @@ SELECT Name FROM Projects ORDER BY Name DESC;
 SELECT CONCAT('O Projeto ', Name, ' precisou de ', Hours, ' horas para ser concluído') As Resultado From Projects;
 
 SELECT Name FROM Projects ORDER BY Hours DESC LIMIT 1;
+
+SELECT * FROM Scientists;
+
+SELECT CONCAT('Existem ', count, ' cientistas na tabela Scientists.') AS Resultado FROM (SELECT COUNT(Name) AS count FROM Scientists) AS Tabela;
