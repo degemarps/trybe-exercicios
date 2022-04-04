@@ -71,7 +71,11 @@ USE Scientists;
 
 SELECT * FROM Projects;
 
+SELECT CONCAT('This is SQL Exercise, Practice and Solution') FROM Projects LIMIT 1;
+
 SELECT Name As 'Nome do Projeto', Hours As 'Tempo de Trabalho' FROM Projects;
+
+SELECT Name FROM Scientists ORDER BY Name;
 
 SELECT Name FROM Projects ORDER BY Name DESC;
 
