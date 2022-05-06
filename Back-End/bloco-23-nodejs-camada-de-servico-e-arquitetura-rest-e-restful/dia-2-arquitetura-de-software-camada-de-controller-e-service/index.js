@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const pingController = require('./controllers/ping.controller');
-const cepController = require('./controllers/getCep.controller');
+const cepController = require('./controllers/cep.controller');
 const app = express();
 app.use(bodyParser.json());
 const port = 3000;
