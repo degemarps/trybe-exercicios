@@ -12,4 +12,6 @@ app.get('/ping', pingController.getPingController);
 
 app.get('/cep/:cep', cepController.getCepController);
 
+app.post('/cep', cepController.createCepController);
+
 app.listen(port, () => console.log(`Listening on port ${port}!`));
