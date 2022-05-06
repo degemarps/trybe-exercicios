@@ -10,6 +10,15 @@ const getCepService = async (cep) => {
   return cepData;
 };
 
+const creatCepService = async (cep, logradouro, bairro, localidade, uf) => {
+  const cepCreated = await cepModel.createCepModel(cep, logradouro, bairro, localidade, uf);
+
+  if (!cepCreated) return false;
+
+  return true;
+};
+
 module.exports = {
-  getCepService
+  getCepService,
+  creatCepService
 };
