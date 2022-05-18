@@ -10,6 +10,8 @@ const getById = async (req, res) => {
   const { id } = req.params;
   const book = await bookService.getById(id);
 
+  if (!book) return res.status(404).json({ message: 'Book not found' });
+
   return res.status(200).json(book);
 };
 
