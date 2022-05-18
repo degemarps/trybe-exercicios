@@ -23,8 +23,20 @@ const addBook = async (req, res) => {
   return res.status(200).json(newBook);
 };
 
+const editBook = async (req, res) => {
+  const { id } = req.params;
+  const { title, author, pageQuantity } = req.body;
+
+  const bookUpdated = await bookService.editBook(id, title, author, pageQuantity);
+
+  if (!bookUpdated) return res.status(404).json({ message: 'Book not found!' });
+
+  return res.status(200).json({ message: 'Book updated!' });
+};
+
 module.exports = {
   getAll,
   getById,
-  addBook
+  addBook,
+  editBook
 };
