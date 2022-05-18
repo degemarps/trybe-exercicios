@@ -12,7 +12,14 @@ const getById = async (id) => {
   return book;
 };
 
+const addBook = async (title, author, pageQuantity) => {
+  const newBook = await Book.create({ title, author, pageQuantity });
+
+  return newBook;
+};
+
 module.exports = {
   getAll,
-  getById
+  getById,
+  addBook
 };

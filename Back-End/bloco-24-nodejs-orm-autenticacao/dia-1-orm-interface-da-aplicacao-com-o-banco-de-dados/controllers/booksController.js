@@ -15,7 +15,16 @@ const getById = async (req, res) => {
   return res.status(200).json(book);
 };
 
+const addBook = async (req, res) => {
+  const { title, author, pageQuantity } = req.body;
+
+  const newBook = await bookService.addBook(title, author, pageQuantity);
+
+  return res.status(200).json(newBook);
+};
+
 module.exports = {
   getAll,
-  getById
+  getById,
+  addBook
 };
