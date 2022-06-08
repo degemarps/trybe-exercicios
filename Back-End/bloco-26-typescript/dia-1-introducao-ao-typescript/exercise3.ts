@@ -7,3 +7,4 @@ enum seasons {
 
 console.log(seasons);
 
+export = seasons;

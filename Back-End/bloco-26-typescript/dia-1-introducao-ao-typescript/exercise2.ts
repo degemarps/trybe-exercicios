@@ -14,3 +14,5 @@ enum yearMonths {
 };
 
 console.log(yearMonths);
+
+export = yearMonths;

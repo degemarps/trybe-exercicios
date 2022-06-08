@@ -8,3 +8,4 @@ var seasons;
 })(seasons || (seasons = {}));
 ;
 console.log(seasons);
+module.exports = seasons;

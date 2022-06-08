@@ -16,3 +16,4 @@ var yearMonths;
 })(yearMonths || (yearMonths = {}));
 ;
 console.log(yearMonths);
+module.exports = yearMonths;
