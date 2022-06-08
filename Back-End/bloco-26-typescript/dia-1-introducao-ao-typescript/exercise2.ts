@@ -1,17 +1,16 @@
 enum yearMonths {
-  JANEIRO = 'Janeiro',
-  FEVEREIRO = 'Fevereiro',
-  MARCO = 'Março',
-  ABRIL = 'Abril',
-  MAIO = 'Maio',
-  JUNHO = 'Junho',
-  JULHO = 'Julho',
-  AGOSTO = 'Agosto',
-  SETEMBRO = 'Setembro',
-  OUTUBRO = 'Outubro',
-  NOVEMBRO = 'Novembro',
-  DEZEMBRO = 'Dezembro',
+  janeiro = 1,
+  fevereiro,
+  marco,
+  abril,
+  maio,
+  junho,
+  julho,
+  agosto,
+  setembro,
+  outubro,
+  novembro,
+  dezembro,
 };
 
 console.log(yearMonths);
-
